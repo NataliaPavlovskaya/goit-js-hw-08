@@ -27,8 +27,8 @@ galleryEl.addEventListener('click', onGalleryClick );
 function onGalleryClick (event){
   event.preventDefault();
 
-    const isImagesEl = event.target.classList.contains('gallery__image');
-  if (!isImagesEl) {
+    const isImagesElem = event.target.classList.contains('gallery__image');
+  if (!isImagesElem) {
     return;
   }
   const largeImgLink = event.target.dataset.source;
