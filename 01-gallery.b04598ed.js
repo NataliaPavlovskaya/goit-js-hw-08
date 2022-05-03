@@ -8,4 +8,4 @@ var t=arguments[3];function e(t){return(e="function"==typeof Symbol&&"symbol"==t
 },{}],"TfQ5":[function(require,module,exports) {
 "use strict";var e=l(require("simplelightbox"));require("simplelightbox/dist/simple-lightbox.min.css");var t=require("./gallery-items.js");function l(e){return e&&e.__esModule?e:{default:e}}const r=document.querySelector(".gallery");function a(e){return e.map(({preview:e,original:t,description:l})=>`\n      <a class="gallery__item" \n      href="${t}">\n      <img class="gallery__image" \n      src="${e}" \n      alt="${l}" \n      title="Beautiful Image!"\n      />\n    </a>`).join("")}function i(t){if(t.preventDefault(),!t.target.classList.contains("gallery__image"))return;t.target.dataset.source;new e.default(".gallery a",{captionDelay:250})}r.insertAdjacentHTML("beforeend",a(t.galleryItems)),r.addEventListener("click",i),console.log(t.galleryItems);
 },{"simplelightbox":"yx6k","simplelightbox/dist/simple-lightbox.min.css":"kz9M","./gallery-items.js":"q5Rn"}]},{},["TfQ5"], null)
-//# sourceMappingURL=/goit-js-hw-08/01-gallery.65a9599d.js.map
+//# sourceMappingURL=/goit-js-hw-08/01-gallery.b04598ed.js.map
